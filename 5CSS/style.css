@@ -1,0 +1,21 @@
+ /* this is an universal selector */
+
+h1{ 
+    color:
+    #ffa511;
+    background-color:           
+   purple ;
+}
+p{
+    color:white;
+    background-color:black ;
+}
+button{
+    color:white;
+    background-color:blue ;
+}
+
+ *{ 
+    font-family: "Times New Roman"
+    };
+    

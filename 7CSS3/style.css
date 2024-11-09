@@ -1,0 +1,75 @@
+div {
+    height : 200px;
+    width: 1000px;
+    border-width:10px;
+    border-style:solid;
+    border-color:red;
+    border-left-color:blue;
+    border-left-style:dashed;
+    border-top:5px dashed blue;
+    padding-top:10px;
+     margin:20px;
+}
+h1{
+    border-width:2px;
+    border-style:dotted;
+    border-color:green;
+    border:5px dotted green;
+    border-radius:15px;
+    margin:0;
+
+}
+/* border 
+used to set an elements border
+border-width
+border-style
+border-color 
+border: 5px solid black;*/
+/* Border Sides
+to control an individual side of the box
+border-left
+border-right
+border-top
+border-bottom */
+
+/* border radius
+used to around the corners of an elements outer border edge
+ div{
+ border-radius:15px or 50%;}
+ */
+
+ /* padding 
+ padding-left:
+ padding -right:
+ padding-top
+ padding-bottom:
+  */
+  /* padding shorthand
+  1. for all 4 sides
+  padding:50px;
+  2. top& bottom | left&right
+  padding:1px 2px;
+  3. top|left&right|bottom
+  padding : 1px 2px 3px;
+  4. top|right|bottom|left
+  padding:1px 2px 3px 4px;
+   */
+
+   /* margin
+   to set spacing on the outside of border
+   1. margin-left
+   2. margin-right
+   3. margin-top
+   4. margin-bottom */
+
+   /* margin shorthand
+  1. for all 4 sides
+  marging:50px;
+  2. top& bottom | left&right
+  margin:1px 2px;
+  3. top|left&right|bottom
+  margin : 1px 2px 3px;
+  4. top|right|bottom|left
+  margin:1px 2px 3px 4px;
+   */
+

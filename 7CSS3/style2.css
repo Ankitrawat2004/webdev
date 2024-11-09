@@ -1,0 +1,62 @@
+/* div{
+    height:200px;
+    width: 200px;
+    background-color: greenyellow;
+    border:2px solid black;
+    margin:5px;
+    display:inline-block;
+}
+/* to remove third element from display */
+/* #third{
+    display : none;
+} */ */
+
+/* Units in css
+ absolute(px) or relative units
+  relative units=%,em, rem
+   percentages = it is often used to define a size as relative
+   to an elements parent object.
+
+   ex=> width:33%; relative to the parent
+ */
+ #outer{
+    height:400px;
+    width:400px;
+    background-color: pink;
+    margin:50px;
+ }
+ #inner{
+    height:100px;
+    width:100px;
+    background-color: cornflowerblue;
+    margin:50%;
+ }
+ /* em
+  1. fontsize of the parent, (font-size)
+  2. fontsize of the element itself, in the case of other properties like width.
+  width and padding in these both case properties => font size of the element itself
+  */
+   
+/* draback of em
+ snowball effect in nested elements
+ <section>
+ section
+ <div>
+ div1
+ <div>
+ div2
+ <div> div 3</div>
+ </div>
+ </div>
+ </section> 
+ 
+ div{
+ font-size:2em;
+}
+ this is an snowball effect
+  
+ to solve this snowball effect we need new property REM(Root em)
+ rem=> fontsize of the root element
+ this takes properties from root parents in this case section is the root
+
+ */

@@ -1,0 +1,136 @@
+ /* this is an universal selector */
+ *{ 
+    font-family: "Times New Roman";
+}
+/*  element selector*/
+
+h1,h3{
+    color:#b92b27;
+}
+/* id selector 
+ select an element based on the value of the element id attribute*
+  <button id="login">Log in</button>
+ <button id="signup">Sign up</button>/button[#my id]
+ #login{
+    background-color: white;
+ }
+ #signup{
+    background-color: #b92b27;
+ }
+/* class selector
+selects an element based on their class attributes
+.classname{} */
+.upvote{
+    background-color: green;
+    color: white;
+}
+/* descendant selector*/
+p a {
+    color: purple;
+    background-color: yellow;
+}
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+nav ul li{
+    color: pink;
+}
+nav ul li a{
+    color: hotpink
+}
+/* adjacent sibling combinator
+heading 3 that comes immediately after any paragraph */
+p + h3{
+text-decoration: underline;
+}
+.upvote+button{
+    background-color: cornflowerblue;
+}
+/* child combinator
+eg= selects all buttons which are direct children of spans 
+>   =child combinator 
+in child combinator we can go only single level of child*/
+div > input{
+    background-color:darksalmon ;
+}
+/* attribute selector
+selects element based on the presence or value of a  given attribute */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color:green;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+#myId p{
+    color: green;
+}
+div[id="myId"] p{
+    color: green;
+}
+/* pseudo class
+ a keyword added to a selector that specifies a special state of the selected elemnets
+ 1.hover
+ 2.active
+ 3.checked
+ 4.nth-of-type*/
+ button:hover{
+    background-color: black;
+    color:white;
+ }
+ h3:hover{
+    text-decoration: overline;
+ }
+ button:active{
+    background-color: hotpink;
+    color: black;
+ }
+ p:active{
+     font-weight: bold;
+     color: green;
+ }
+ input[type=" radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+ }
+ div:nth-of-type(1n){
+    background-color: blanchedalmond;
+ }
+ /* pseudo element
+ a keyword added to a selector that lets you  style a specific part of the selected elements
+ 1. first-lettter
+ 2.first-line
+ 3.selection
+ */
+ h1::first-letter{
+    color: green;
+ }
+
+p::first-line{
+    color:purple;
+}
+ p::selection{
+    background-color: lawngreen;
+ }
+ /* Cascading stylesheets
+ 
+ specificity = is an algorithm that calculates the weight that is applied to a given css declaration.
+ id>class(class,attribute & pseudo class)>element& pesudo-element
+ if specificity same then => cascading
+ inline style>id>class>element
+  */
+
+  h3{
+    background-color: yellow;
+  }
+  h3{
+    background-color: blue;
+  }
+  /* inline specificy = inline style are msot specific than id */
+  /* !important = to show the msot specific thing in document */
+  h3{
+    background-color: antiquewhite !important;
+  }
