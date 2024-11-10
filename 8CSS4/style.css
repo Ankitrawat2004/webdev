@@ -1,0 +1,17 @@
+div{
+height: 200px;
+width: 200px;
+background-color: rgba(255,0,0,0.5);
+}
+/* alpha channel 
+sets the opacity for a color
+Ranges from 0 to 1
+hidden
+rgba(255,224,255,0.3) */
+#opacity{
+    background-color: #ffa511;
+    opacity:0; 
+}
+/* CSS Transitions
+transitions enable you to define the transition between two states of an elemnet
+ */

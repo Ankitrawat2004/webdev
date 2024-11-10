@@ -1,0 +1,10 @@
+div{
+    width:200px;
+    height:50px;
+    text-align:center;
+    background-color: green;
+    margin:10px auto;
+    box-shadow:2px 2px 8px blacl=k;
+
+ }
+ /* box shadow: 2px(along x axis)2px(along y axis) 8px(blur) color ; */

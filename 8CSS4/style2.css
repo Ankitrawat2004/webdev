@@ -1,0 +1,48 @@
+section{
+    margin-top:100px;
+
+}
+ div{
+    width:200px;
+    height:50px;
+    text-align:center;
+    background-color: green;
+    border:2px solid black;
+    margin:10px auto;
+ }
+ div:nth-of-type(2n){
+    background-color: #f7bd6a;
+ }
+ div:nth-of-type(3n){
+    background-color: #ebb02d;
+ }
+ #one{
+    transform:rotate(90deg);
+ }
+ #two{
+    transform: scale(0.5,2);
+ }
+ #three{
+    transform:scale(0.5);
+ }
+ #four{
+    transform:translate(-20px);
+    
+ }
+ #five{
+    transform:skewX(30deg);
+ }
+ /* css transform
+ this property lets you rotate,scale,skew or translate an element
+ 1. rotate
+ transform:rotate(45deg);
+ 2. scale
+ transform:scale(0.5)
+ transform:scale(0.5,2);{this is along x and y direction}
+ 3. translate in 2d plane
+ transform:translate(50px,50px);{along x and y axis}
+ transform:translateX(50px);
+ transform:translateY(50px);
+ 4. skew
+ transform:skew(30degree);
+ */
