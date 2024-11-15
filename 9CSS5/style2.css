@@ -1,0 +1,94 @@
+#container{
+    height: 500px;
+    width:60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display:flex;  /*  now all div are fit in parent div in horizontal line */
+    /* to chanhge the direction of div in flexbox */
+    flex-direction:column;
+   
+    /* flex-wrap:wrap
+    align-items:flex-start; */
+    align-content: flex-start;
+    align-content: space-between;
+    align-content: baseline;
+
+}
+#orange {
+    align-self:flex-end;
+    /* flex-basis:50px; */
+    /* flex-grow:1; */
+    flex-shrink:1;
+}
+h1{
+    text-align:center;
+}
+#blue{
+   /* flex-basis:400px;  */
+   /* flex-grow:3;  */
+   /* max-width:400px;
+   min-width:400px; */
+   flex-shrink:2;
+
+}
+#container div{
+    height:100px;
+    width:50px;
+    color:white;
+    text-align:center;
+
+}
+/* ALIGN ITEMS
+DISTRIBUTES OUR ITEMS ALONG THE cross axis
+(element move only one there is an space between cross axis)
+
+align-items:flex-start;
+align-items:flex-end;
+align-items:flex-center;
+align-items:baseline;(it means all elemet show in same baseline) */
+
+
+/* align content 
+it sets the distribution of space between and around content items along a flexbox cross -axis
+align-content:flex-start|flex-end|center
+align-content:space-between|space-around|evenly
+align-content:baseline; */
+
+/* align self(this property is for individual )
+higher in priority align items
+aligns an item along the cross axis
+align-self:flex-start;
+align-self:flex-end;
+align-self:center;
+align-self:baseline;
+ */
+/* flex sizing
+ 1. flex -basis
+ it sets the initial main size of a flex item.
+ flex-basis:100px; 
+ flex-direction:row then it is based on width
+ flex-direction:column then it is based on height
+
+ 2. flex grow
+ it specifies how much of the flex container remaining space should be assigned to the
+ flex items main size
+ flex-grow:1(by default value);
+
+ 3.flex shrink
+ it sets the flex shrink factor of a flex item.
+ flex-shrink:1;
+
+ */
+
+ /* flex shorthand
+ 1. flex-grow|flex-shrink|flex-basis
+ flex:2 2 100px;
+ 2. flex-grow| flex-baisi
+ flex:2 100px;
+ 3. flex-grow(unitless)
+ flex:2;
+ 4.flex-basis
+ flex:100px;
+
+  */
