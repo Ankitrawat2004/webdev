@@ -1,0 +1,48 @@
+.box{
+    height:100px;
+    width:300px;
+    background-color: pink;
+    animation-name : fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay:2s;
+    animation-iteration-count: 3;
+    animation-direction:normal ;
+    /* animation shorthand */
+    animation: fontAnimation 2s easi-in 2s 3  normal;
+
+}
+@keyframes fontAnimation{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+/* animation direction
+normal (animation goes from starting to ending)
+reverse (animation goes from ending to starting)
+alternate(first go starting to ending and then vice versa ending to starting) 
+
+ animation-iteration-count=> it means how many time we have to run animation
+
+*/
+
+/* % in animation
+@keyframe myName{
+0%{fot-size:20px;}
+50%{fot-size:30px;}
+100%{fot-size:40px;}
+*/
+@keyframes colAnimate{
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}

@@ -4,3 +4,96 @@ setting a containers display to grid will make all children grid items
 container{
 display:grid;
 }*/
+.container{
+    width: 600px;
+  height: 300px;
+    background-color: yellow;
+    display:grid;
+    grid-template-rows:50px 50px 50px 50px;
+    grid-template-columns:100px 100px 100px;
+    grid-template-columns:auto auto auto;
+    /* if u want ot make only 1 column=  grid-template-columns:auto; */
+    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    row-gap:10px;
+    column-gap:10px;
+    grid-gap:10px 30px;
+    justify-items: center;
+    /* grid-gap:10px; it means row and column both have same gap */
+    align-items: start;
+    place-self:start;
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column:1/4;
+    grid-column:1/span 3;
+    justify-self: end;
+    align-self: start;
+}
+.two{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row:1/3;
+    grid-row:1/span 3;
+}
+.item{
+    width: 100px;
+    height: 50px;
+    background-color:greenyellow ;
+    border:2px solid black;
+    text-align: center;
+}
+/* grid template
+they define the lines & track sizing
+grid-template-rows
+grid-template-columns
+ */
+
+ /* grid template repeat
+ repeat is used to divide all available space
+ (1 fr means 1 fraction of 100% width/available space)
+ grid-template-rows:repeat(count, 1fr)
+  grid-template-columns:repeat(count, 1fr)
+   grid-template-rows:repeat(2, 1fr)
+    grid-template-rows:(1fr, 1fr)
+ */
+
+ /* grid gaps
+ they define the gaps between the lineds
+ row-gap:
+ column-gap:
+ grid-gap:rowGap columnGap
+  */
+  /* grid columns
+   defines an item starting & ending positon inside the column
+   grid-column-start:line_number
+      grid-column-end:line_number
+         grid-column:start_col/end_col
+         grid-column:start_col/span number
+   */
+
+   /* grid rows 
+    defines an items starting & ending position inside the row
+   grid-row-start:line_number
+   grid-row-end:line_number
+   grid-row:start_row/end_row
+   grid-row:start_row/span number */
+
+/* common properties
+{horizontal}
+justify -itmes(container) this is for all item
+justify-self (item)this is for an individiual item
+
+{vertical}
+align-items(container)
+align-self(item)
+ 
+place item is used for same properties of horizontal and vertical
+place-item
+place-self
+*/
+/* to display the grid like an inline element then we use
+ display:inline-grid;
+ */
+
