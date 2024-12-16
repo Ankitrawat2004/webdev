@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            one
+            <button>click</button>
+        </li>
+    </ul>
+    <script>
+        const ul = document.querySelector("ul");
+        const li_one = document.querySelector("li");
+        const button = document.querySelector("button");
+
+        ul.addEventListener("click", function () {
+            console.log("UL clicked");
+        }, true)
+        li_one.addEventListener("click", function () {
+            console.log("li one clicked");
+        }, true)
+        button.addEventListener("click", function (e) {
+            // e.stopPropagation();
+            console.log("button clicked");
+        }, true)
+    </script>
+</body>
+</html>
