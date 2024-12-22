@@ -52,6 +52,7 @@ function addTask() {
   editBtn.addEventListener("click", function () {
     const update = prompt("Edit task:", taskSpan.textContent);
     if (update !== null) {
+      taskSpan.textContent = update;
       li.classList.remove("completed");
       checkbox.checked = false;
       updateCounters();
